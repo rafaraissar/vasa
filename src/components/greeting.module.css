@@ -1,0 +1,32 @@
+.greetingwrapper {
+  display: flex;
+  width: 600px;
+  height: fit-content;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 55px;
+  color: #000;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+
+.greetingwrapper h1 {
+  font-weight: 400;
+}
+
+.greetingwrapper p {
+  font-weight: 100;
+}
+@media (max-width: 1023px) {
+  .greetingwrapper {
+    width: 90%;
+  }
+  .greetingwrapper h1 {
+    font-size: 25px;
+  }
+  .greetingwrapper p {
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

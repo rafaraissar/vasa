@@ -1,0 +1,19 @@
+.bannerwrapper {
+  position: fixed;
+  z-index: -2;
+
+  display: flex;
+  width: 100%;
+  color: #fff;
+  height: 66vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  box-sizing: border-box;
+}
+@media (max-width: 1023px) {
+  .bannerwrapper {
+    height: 90vh;
+  }
+}
