@@ -73,6 +73,83 @@
   color: #1c1c1a;
 }
 
+.listwedding {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 35px;
+}
+.listweddingitem {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 280px;
+  height: 280px;
+  margin: auto;
+  display: block;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+.listweddingitem:hover {
+  cursor: pointer;
+}
+
+.listweddingitemimage {
+  object-fit: cover;
+  overflow: hidden;
+  position: relative !important;
+}
+.listweddingitemtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  background-color: rgba(20, 20, 20, 0.1);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.listweddingitemtext:hover {
+  background-color: rgba(20, 20, 20, 0.327);
+}
+.listweddingitemtextkategori {
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  margin: 10px;
+}
+.listweddingitemtextpasangan {
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin: 10px;
+}
+.listweddingitemtexticon {
+  transition: 0.3s ease-in-out;
+  font-size: 19px;
+  margin: 10px;
+}
+.listweddingitemtext:hover .listweddingitemtextkategori {
+  transform: translateY(-5px);
+}
+.listweddingitemtext:hover .listweddingitemtextpasangan {
+  transform: translateY(-5px);
+}
+.listweddingitemtext:hover .listweddingitemtexticon {
+  transform: translateY(-5px);
+}
 @media (max-width: 1023px) {
   .bannerwrapper {
     height: 90vh;

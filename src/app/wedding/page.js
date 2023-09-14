@@ -1,9 +1,10 @@
 import styles from "./wedding.module.css";
 import Image from "next/image";
 
-import Greeting from "@/components/greeting";
+import Link from "next/link";
+import photo from "../../data/wedding/wedding";
 import banner from "../../../public/wedding/banner.jpg";
-
+import EastIcon from "@mui/icons-material/East";
 export default function Wedding() {
   return (
     <>
@@ -26,19 +27,36 @@ export default function Wedding() {
           <div className={styles.judulporto}>
             <h1>Wedding</h1>
           </div>
-          <div className={styles.judulporto}>Weddingggg</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
-          <div className={styles.judulporto}>Wedding</div>
+          <div className={styles.listwedding}>
+            {photo.map((image) => {
+              return (
+                <Link
+                  href="/wedding/nadila-arda"
+                  className={styles.listweddingitem}
+                >
+                  <Image
+                    src={image.image}
+                    className={styles.listweddingitemimage}
+                    alt={image.alt}
+                    placeholder="blur"
+                    blurDataURL={"/loading.gif"}
+                    objectFit="cover"
+                    fill
+                    sizes="100vw"
+                  />
+                  <div className={styles.listweddingitemtext}>
+                    <div className={styles.listweddingitemtextkategori}>
+                      Wedding
+                    </div>
+                    <div className={styles.listweddingitemtextpasangan}>
+                      Nasil - jdad
+                    </div>
+                    <EastIcon className={styles.listweddingitemtexticon} />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

@@ -1,14 +1,9 @@
-"use client";
-import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
 import styles from "./weddingdetail.module.css";
 import Image from "next/image";
 import photo from "../../../data/wedding/nadila-arda";
 import banner from "../../../../public/wedding/banner.jpg";
-
+import loading from "../../../../public/loading.gif";
 export default function Weddingdetail() {
-  const router = useRouter();
-  const pathname = usePathname();
   return (
     <>
       <div className={styles.bannerwrapper}>
@@ -35,10 +30,11 @@ export default function Weddingdetail() {
               return (
                 <div className={styles.imageportodetail} key={image.link}>
                   <Image
-                    src={image.image}
+                    src={image.image || loading}
                     className={styles.imageportoimage}
                     alt={image.alt}
                     placeholder="blur"
+                    blurDataURL={"/loading.gif"}
                     fill
                     sizes="100vw"
                   />
