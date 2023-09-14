@@ -38,6 +38,7 @@ export default function Weddingdetail() {
                     src={image.image}
                     className={styles.imageportoimage}
                     alt={image.alt}
+                    placeholder="blur"
                     fill
                     sizes="100vw"
                   />
