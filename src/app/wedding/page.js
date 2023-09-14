@@ -26,7 +26,7 @@ export default function Wedding() {
           <div className={styles.judulporto}>
             <h1>Wedding</h1>
           </div>
-          <div className={styles.judulporto}>Wedding</div>
+          <div className={styles.judulporto}>Weddingggg</div>
           <div className={styles.judulporto}>Wedding</div>
           <div className={styles.judulporto}>Wedding</div>
           <div className={styles.judulporto}>Wedding</div>
