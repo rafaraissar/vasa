@@ -25,7 +25,7 @@ export default function Wedding() {
         <div className={styles.homespace}></div>
         <div className={styles.homecontent}>
           <div className={styles.judulporto}>
-            <h1>Weddingg</h1>
+            <h1>Wedding</h1>
           </div>
           <div className={styles.listwedding}>
             {photo.map((image) => {
